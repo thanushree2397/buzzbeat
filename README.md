@@ -25,7 +25,7 @@ This project focuses purely on the **frontend**, built using modern web technolo
 
 ##  Project Type
 **Front-End Mini Project**  
-(No backend, API handling done on the client side if applicable)
+(No backend)
 
 ##  Purpose
 This project was created to practice:
