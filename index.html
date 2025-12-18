@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzBeat - Your Personalized News Aggregator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+               <div class="logo" text-align="center">
+    
+<img src="assets/images/logo.png" alt="BuzzBeat">
+<h1 style="text-align:left;">BuzzBeat</h1>
+
+   
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="world">World</a></li>
+                        <li><a href="#" class="nav-link" data-page="technology">Technology</a></li>
+                        <li><a href="#" class="nav-link" data-page="sports">Sports</a></li>
+                        <li><a href="#" class="nav-link" data-page="entertainment">Entertainment</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="user-actions">
+                    <button id="login-btn"><i class="fas fa-user-circle"></i> Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <h2 class="page-title"><i class="fas fa-home"></i> Top Stories</h2>
+            <div class="news-grid">
+                <!-- Repeat this card structure 9 times with different content -->
+                <!-- News Card 1 -->
+                <div class="news-card">
+                    <div class="category-badge">Politics</div>
+                    <div class="card-image">
+<img src="assets/images/h1.webp" alt="Global Summit">
+                    </div>
+                    <div class="card-content">
+                        <h3>Flight Crash Supreme Court Criticises</h3>
+                        <p>Air India Flight Crash Supreme Court Criticises Media Narrative Of Pilot Error From Selective Leak Of Preliminary Report </p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=10" alt="Source"> Reuters</span>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 2 -->
+                <div class="news-card">
+                    <div class="category-badge">Technology</div>
+                    <div class="card-image">
+                        <img src="assets/images/h2.webp" alt="AI Assistant">
+              
+
+                    </div>
+                    <div class="card-content">
+                        <h3>Tech Giant Unveils Revolutionary AI Assistant</h3>
+                        <p>The new AI system can understand and respond to complex human emotions, marking a significant breakthrough in artificial intelligence.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=11" alt="Source"> TechCrunch</span>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- News Card 3 -->
+                <div class="news-card">
+                    <div class="category-badge">Sports</div>
+                    <div class="card-image">
+                        <img src="assets/images/h3.jpg" alt="Olympics">
+                    </div>
+                    <div class="card-content">
+                        <h3>Olympic Games Break Viewership Records</h3>
+                        <p>This year's Olympic Games have become the most-watched sporting event in history, with billions tuning in from around the world.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=12" alt="Source"> ESPN</span>
+                            <span>Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 4 -->
+                <div class="news-card">
+                    <div class="category-badge">Entertainment</div>
+                    <div class="card-image">
+                        <img src="assets/images/h4.webp" alt="Film">
+                    </div>
+                    <div class="card-content">
+                        <h3>New Blockbuster Film Shatters Box Office Records</h3>
+                        <p>The latest installment in the popular franchise has earned over $500 million in its opening weekend, setting a new industry benchmark.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=13" alt="Source"> Variety</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 5 -->
+                <div class="news-card">
+                    <div class="category-badge">Science</div>
+                    <div class="card-image">
+                        <img src="assets/images/h5.jpeg" alt="Amazon">
+                    </div>
+                    <div class="card-content">
+                        <h3>Scientists Discover New Species in Amazon Rainforest</h3>
+                        <p>Researchers have identified previously unknown plant and animal species in the unexplored regions of the world's largest rainforest.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=14" alt="Source"> National Geo</span>
+                            <span>2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 6 -->
+                <div class="news-card">
+                    <div class="category-badge">Business</div>
+                    <div class="card-image">
+                    <img src="assets/images/h6.webp" alt="Stock Market">
+                    </div>
+                    <div class="card-content">
+                        <h3>Stock Markets Reach All-Time High</h3>
+                        <p>Global markets surge as economic recovery exceeds expectations, with technology and green energy sectors leading the gains.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=15" alt="Source"> Bloomberg</span>
+                            <span>3 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- World Page -->
+        <section id="world" class="page">
+            <h2 class="page-title"><i class="fas fa-globe"></i> World News</h2>
+            <div class="news-grid">
+                <!-- World news cards will go here (9 cards) -->
+                <!-- Card 1 -->
+                <div class="news-card">
+                    <div class="category-badge">Politics</div>
+                    <div class="card-image">
+                     <img src="assets/images/w1.jpg" alt="Peace Talks">
+                    </div>
+                    <div class="card-content">
+                        <h3>30 Killed As Pak Air Force Drops 8 Bombs On Khyber Pakhtunkhwa Village</h3>
+                        <p>Many counter-terrorism operations have been carried out in the past in Khyber Pakhtunkhwa, with many civilian deaths being reported from the region..</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=19" alt="Source"> BBC News</span>
+                            <span>8 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add 8 more world news cards following the same structure -->
+                <!-- Card 2 -->
+                <div class="news-card">
+                    <div class="category-badge">Economy</div>
+                    <div class="card-image">
+                        <img src="assets/images/w2.jpg" alt="Economy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tax reforms: A Catalyst For India’s Rise In The Global Economic Order</h3>
+                        <p>India’s decade-long tax reforms drive higher collections, attract global capital, simplify compliance and strengthen position in global economic order</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=20" alt="Source"> Financial Times</span>
+                            <span>12 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="news-card">
+                    <div class="category-badge">Environment</div>
+                    <div class="card-image">
+                        <img src="assets/images/w3.jpg" alt="Environment">
+                    </div>
+                    <div class="card-content">
+                        <h3>UN Report Warns of Accelerating Biodiversity Loss</h3>
+                        <p>A new United Nations assessment reveals that species extinction rates are accelerating at an alarming pace worldwide.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=21" alt="Source"> UN News</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                  <!-- Card 4 -->
+                <div class="news-card">
+                    <div class="category-badge">Social Media</div>
+                    <div class="card-image">
+                        <img src="assets/images/w4.webp" alt="Environment">
+                    </div>
+                    <div class="card-content">
+                        <h3>China is calling a TikTok deal a win. What's in it for them?</h3>
+                        <p>A much-awaited deal over TikTok may be close, with US President Donald Trump and his Chinese counterpart Xi Jinping set to discuss terms on Friday.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=29" alt="Source"> China Daily</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                  <!-- Card 5-->
+                <div class="news-card">
+                    <div class="category-badge">Digital</div>
+                    <div class="card-image">
+                        <img src="assets/images/w5.webp" alt="Environment">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cryptocurrency News Live: Bitcoin, Ethereum Updates</h3>
+                        <p>Cryptocurrency markets are showing mixed signals with significant volatility across various altcoins. PumpBTC leads the gainers with a remarkable 129.21% surge in the last 24 hours, followed by Avantis(AVNT) and Merlin Chain(MERL) with 59.85% and 47.57% gains respectively. Orderly and Perpetual Protocol also see notable increases.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=22" alt="Source"> News Daily</span>
+                            <span>1 hour ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                  <!-- Card 6-->
+                <div class="news-card">
+                    <div class="category-badge">Space</div>
+                    <div class="card-image">
+                        <img src="assets/images/w6.jpg" alt="Environment">
+                    </div>
+                    <div class="card-content">
+                        <h3>Delhi-NCR meteor 2025: Space debris or real meteor?</h3>
+                        <p>You know that moment when you’re half asleep, maybe scrolling through your phone, and then BAM — the sky lights up like someone lit a fuse across the dark canvas above? That was in Delhi-NCR not long ago.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=23" alt="Source"> NASA Daily</span>
+                            <span>2 day ago</span>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        
+        <!-- Technology Page -->
+        <section id="technology" class="page">
+            <h2 class="page-title"><i class="fas fa-microchip"></i> Technology News</h2>
+            <div class="news-grid">
+                
+                <!-- Card 1 -->
+                <div class="news-card">
+                     <div class="category-badge">IT</div>
+                    <div class="card-image">
+                        <img src="assets/images/t1.webp" alt="Quantum Computing">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tech giants slipped up to 6% in morning deals</h3>
+                        <p>Indian IT stocks like Tata Consultancy Services and Infosys faced a dip. This happened after the US increased H-1B visa fees. The move sparked concerns about the impact on the IT sector's profitability. Analysts suggest caution and portfolio adjustments. They also advise waiting for company commentary before investing. The sector had recently shown signs of recovery.</p>
+                    <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=22" alt="Source">Tech Review</span>
+                            <span>3 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Card 2-->
+                <div class="news-card">
+                     <div class="category-badge">AI</div>
+                    <div class="card-image">
+                        <img src="assets/images/t2.webp" alt="Quantum Computing">
+                    </div>
+                    <div class="card-content">
+                        <h3>Quantum Computing Breakthrough Achieved</h3>
+                        <p>Researchers successfully demonstrate quantum supremacy with a new processor that solves problems in minutes that would take classical computers thousands of years.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=27" alt="Source">Tech news</span>
+                            <span>7 hours ago</span>
+                        </div>
+                    </div>
+                </div>                <!-- Card 3-->
+                <div class="news-card">
+                     <div class="category-badge">Tax</div>
+                    <div class="card-image">
+                        <img src="assets/images/t3.avif" alt="Trade">
+                    </div>
+                    <div class="card-content">
+                        <h3>Just as India-US trade talks regain traction, Trump jolts services where it could hurt India the most</h3>
+                        <p>US President Donald Trump on Friday imposed a $100,000 annual fee on H-1B visas, effectively crippling the programme that most benefited the Indian diaspora, as the average annual salary of an H-1B visa holder in the US is $66,000.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=29" alt="Source"> MIT Tech Review</span>
+                            <span>8 hours ago</span>
+                        </div>
+                    </div>
+                </div>                <!-- Card 4 -->
+                <div class="news-card">
+                    <div class="category-badge">Innovation</div>
+                    <div class="card-image">
+                        <img src="assets/images/t4.avif" alt="Innovative">
+                    </div>
+                    <div class="card-content">
+                        <h3>OpenAI CEO Sam Altman shares which jobs AI could replace and which will survive: Is your job at risk?</h3>
+                        <p>AI is evolving day by day and is slowly and steadily replacing humans in some jobs already. The AI startup OpenAI, which launched one of the most advanced AI LLM models, ChatGPT-5 is already alarming people to skill up. The CEO of OpenAI has already said this multiple times in various talk shows and interviews.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=22" alt="Source"> News18</span>
+                            <span>1 hour ago</span>
+                        </div>
+                    </div>
+                </div>                <!-- Card 5-->
+                <div class="news-card">
+                     <div class="category-badge">Car</div>
+                    <div class="card-image">
+                        <img src="assets/images/t5.webp" alt="Tech">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nissan joins race for fully autonomous cars with new technology push</h3>
+                        <p>Nissan is currently facing financial challenges. The company is developing new self-driving technology as the market is projected to grow in the future.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=42" alt="Source">Daily News</span>
+                            <span>4 hours ago</span>
+                        </div>
+                    </div>
+                </div>                <!-- Card 6-->
+                <div class="news-card">
+                     <div class="category-badge">Production</div>
+                    <div class="card-image">
+                        <img src="assets/images/t6.jpg" alt="Technology">
+                    </div>
+                    <div class="card-content">
+                        <h3>Companies EV-Tech Surges After NCLT Approves Merger</h3>
+                        <p>Mercury EV-Tech Limited, which produces electric vehicles, saw its shares increase on September 22, 2025, following the National Company Law Tribunal's approval of its merger with EV Nest Private Limited.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=82" alt="Source"> ET Now</span>
+                            <span>3 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sports Page -->
+        <section id="sports" class="page">
+            <h2 class="page-title"><i class="fas fa-running"></i> Sports News</h2>
+            <div class="news-grid">
+                <!-- Sports news cards will go here (9 cards) -->
+                 <!-- Card 6 -->
+                <div class="news-card">
+                    <div class="category-badge">Base Ball</div>
+                    <div class="card-image">
+                        <img src="assets/images/s1.webp" alt="Source">
+                    </div>
+                    <div class="card-content">
+                        <h3></h3>BTS’s V throws first pitch at Dodgers, introduced as 'the star known by one letter’—ARMY screams in No. 7 jerseys
+                        <p>BTS’s V stepped up to the mound Monday night, throwing the ceremonial first pitch at a Los Angeles Dodgers game—after a star-studded meet-and-greet with two-way phenom Shohei Ohtani. The star wore ‘7’ on his jersey, which of course is always a reminder for ARMY about the ‘7’ members of the band.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://www.indiatimes.com/thumb/123958748.cms?imgsize=47204&width=616&resizemode=4" alt="Source"> Dodgers</span>
+                            <span> 5 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 2 -->
+                <div class="news-card">
+                    <div class="category-badge">Football</div>
+                    <div class="card-image">
+                        <img src="assets/images/s2.webp" alt="Source">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dani Olmo, Ferran Torres Lead Barcelona To 3-0 Win Over Getafe In Spanish League</h3>
+                        <p> Dani Olmo scored and set up one of Ferran Torres' two goals with a neat backheel flick as Barcelona beat Getafe 3-0 in the Spanish league on Sunday. It was the second straight game for Barcelona at its training facility as the newly renovated Camp Nou Stadium lacks the required permits</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=53" alt="Source"> Sports Review</span>
+                            <span>Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="news-card">
+                    <div class="category-badge">Tennis</div>
+                    <div class="card-image">
+                        <img src=assets/images/s3.jpg alt="Tennis"> 
+                    </div>
+                    <div class="card-content">
+                        <h3>Iga Swiatek Recovers From Slow Start To Win Korea Open Title</h3>
+                        <p>ga Swiatek battled back from a disastrous start to win the Korea Open on Sunday, beating Russia's Ekaterina Alexandrova 1-6, 7-6 (7/3), 7-5 in the final. The world number two dropped the opening set after an error-strewn performance drastically out of keeping with her dominating form this week in Seou</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=33" alt="Source"> Sports Daily</span>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="news-card">
+                    <div class="category-badge">Chess</div>
+                    <div class="card-image">
+                        <img src="assets/images/s4.jpeg" alt="Source">
+                    </div>
+                    <div class="card-content">
+                        <h3>"I Have Become A Better Player And Person In What's Been A Tough Year": GM Vaishali</h3>
+                        <p>Indian Grandmaster R Vaishali says the FIDE Grand Swiss title triumph here has come at a crucial juncture for her after having endured a year that was "not going" well despite her persistent effort to improve. Vaishali became the first player to win the elite event in the women's section for a second consecutive time and besides a good prize cheque of USD 40,000,</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=23" alt="Source"> Sport Updates</span>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5-->
+                <div class="news-card">
+                    <div class="category-badge">Hockey</div>
+                    <div class="card-image">
+                        <img src="assets/images/s5.webp">
+                    </div>
+                    <div class="card-content">
+                        <h3>Defender Jyoti Singh To Lead Junior India Women's Hockey Team In Australia</h3>
+                        <p>Defender Jyoti Singh will lead a 23-member Indian junior women's hockey team on a five-match tour of Australia, scheduled at the National Hockey Centre in Canberra from September 26 to October 2. The side will play three matches against the Australia junior women's team, followed by two fixtures against Canberra Chill, a club competing in Australia's Hockey One League.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=26" alt="Source"> Sports Illustrated</span>
+                            <span>10 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="news-card">
+                    <div class="category-badge">Cricket</div>
+                    <div class="card-image">
+                        <img src="assets/images/s6.webp" alt="Source">
+                    </div>
+                    <div class="card-content">
+                        <h3>Shubman Gill, Abhishek Sharma Launched BrahMos After Sahibzada Farhan Signalled AK-47: Ex-Pakistan Star</h3>
+                        <p>Asia Cup 2025: In the India vs Pakistan clash, Abhishek Sharma stole the spotlight with a whirlwind 74 off 39 balls, smashing six fours and five sixes</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=23" alt="Source"> Sports Illustrated</span>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+          
+            </div>
+        </section>
+        
+        <!-- Entertainment Page -->
+        <section id="entertainment" class="page">
+            <h2 class="page-title"><i class="fas fa-film"></i> Entertainment News</h2>
+            <div class="news-grid">
+                <!-- Entertainment news cards will go here (9 cards) -->
+                      <!-- Card 1 -->
+                <div class="news-card">
+                    <div class="category-badge">K-Pop</div>
+                    <div class="card-image">
+                        <img src="assets/images/e1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>BTS RM, V And Jungkook Set The Internet On Fire With Gym Photos</h3>
+                        <p>Amid album prep and attending events, BTS is also making sure to hit the gym. Fans were in for a big surprise when photos of the members RM, V and Jungkook surfaced on social media on Friday, September 19. The pictures captured the trio flaunting their muscular bodies in the gym. Obviously, it was enough to send the ARMYs into a frenzy.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjPUMpoFm4X6d-bUcxHOCPe_jUVjIoQ1iM_wyf-zRaE0rAQidx4kLQNjlsdfVoIfrbKE&usqp=CAU" alt="Source">K-Pop Daily</span>
+                            <span> 3 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Card 5 -->
+                <div class="news-card">
+                    <div class="category-badge">Pop</div>
+                    <div class="card-image">
+                        <img src="assets/images/e2.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dua Lipa Closes MSG Run With ‘It Ain't Over 'Til It's Over' Duet With Lenny Kravitz</h3>
+                        <p>Dua Lipa made herself at home at Madison Square Garden for four nights on the Radical Optimism tour. Each night, the pop star continued her tradition of honoring local legends during the cover song portion of her set. It just so happened that NYC had some of the coolest ones, who also happened to be in the neighborhood to join her on stage</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=49" alt="Source"> Pop Reporter</span>
+                            <span> 17 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Card 6 -->
+                <div class="news-card">
+                    <div class="category-badge">Kollywood</div>
+                    <div class="card-image">
+                        <img src="assets/images/e3.webp">
+                    </div>
+                    <div class="card-content">
+                        <h3>Actress Mirna Touches a New Milestone with '18 Miles'</h3>
+                        <p>A fresh wave of love has swept through the town, carried by the soulful essence of 18 Miles. Beyond borders, beyond barriers, this timeless tale of emotions has quickly become the new anthem of pure love. The recent glimpse of the Ashok Selvan–Mirna starrer has captivated audiences with its poignant moments, striking chemistry, and breathtaking visuals. The mellifluous content directed by Sathish Selvakumar, has music by Siddhu Kumar, The lyrical beauty of Vignesh Ramakrishna, paired with Siddhu’s soulful composition, creates a mood that is both heartfelt and timeless.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=79" alt="Source"> Movies Daily</span>
+                            <span>1 hour ago</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="news-card">
+                    <div class="category-badge">Pop</div>
+                    <div class="card-image">
+                        <img src="assets/images/e4.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Singer D4vd Cancels U.S. Tour—What We Know About Investigation Into Dead Body Found In Singer’s Car</h3>
+                        <p>Singer D4vd scrapped the final dates of his North American concert tour and balked on a previously planned album release scheduled for Friday as the Los Angeles Police Department investigates a dead body that was found in a car registered to the singer last week, who has since been identified as a teenage girl who went missing last year.</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=29" alt="Source"> Pop Reporter</span>
+                            <span> 12 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                  <!-- Card 2 -->
+                <div class="news-card">
+                    <div class="category-badge">Movies</div>
+                    <div class="card-image">
+                        <img src="assets/images/e5.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <h3>'Lokah Chapter 1- Chandra' OTT release: Dulquer Salmaan reveals when and where to watch India's first female-led superhero film</h3>
+                        <p>Since its release on August 28, 'Lokah: Chapter 1 - Chandra', a Malayalam superhero film directed by Dominic Arun and produced by Dulquer Salmaan, has shattered box office records. The movie, featuring Kalyani Priyadarshan, has become the highest-grossing Malayalam film worldwide, surpassing Mohanlal’s ‘L2: Empuraan’</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=66" alt="Source">Movies Daily</span>
+                            <span> 1 hour ago</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 3 -->
+                <div class="news-card">
+                    <div class="category-badge">Bollywood</div>
+                    <div class="card-image">
+                        <img src="assets/images/e6.webp">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ranbir Kapoor's Cameo in Aryan Khan's The Ba***ds of Bollywood Sparks Controversy</h3>
+                        <p>Aryan Khan's directorial debut, The Ba***ds of Bollywood, is the talk of the town now. The star kid packed as many as 21 celebrity cameos in his show. One of the cameos was of Ranbir Kapoor, who played himself. He is shown in the last episode and has a brief scene with Karan Johar (who plays himself) and Anya Singh. While the actor's fans were happy with the cameo and Ranbir's screen presence, the scene landed in trouble</p>
+                        <a href="#" class="read-more">Read full article <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-meta">
+                            <span class="source"><img src="https://picsum.photos/40/40?random=69" alt="Source"> News Daily</span>
+                            <span> 1 hour ago</span>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+    </main>
+    
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Welcome </h2>
+                <p>Sign in to your BuzzBeat account</p>
+            </div>
+            <button class="close-modal">&times;</button>
+            
+            <div class="social-login">
+                <button class="social-btn google-btn">
+                    <i class="fab fa-google"></i> Google
+                </button>
+                <button class="social-btn facebook-btn">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+            </div>
+            
+            <div style="text-align: center; margin: 20px 0; color: var(--gray); position: relative;">
+                <span style="background: white; padding: 0 15px; position: relative; z-index: 1;">Or</span>
+                <div style="height: 1px; background: #eee; position: absolute; top: 50%; left: 0; right: 0; z-index: 0;"></div>
+            </div>
+            
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <p><a href="#">Forgot your password?</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>NewsFlow</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">World</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BuzzBeat. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--secondary);"></i></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+       
+</body>
+</html>
+
